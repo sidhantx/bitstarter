@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 app.use(express.logger());
-
+var fs = require('fs');
 app.get('/', function(request, response) {
 
 var buffer = new Buffer(256);
